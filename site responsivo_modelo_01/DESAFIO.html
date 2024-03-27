@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="br-pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem do lado do texto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="estilo-mq.css">
+    <link rel="stylesheet" href="estilo-novo.css">
+
+    <title>Menu_Repositorio</title>
+</head>
+
+<body onresize="mudouTamanho()">
+
+    <header>
+        <h1>Meu Site-Responsivo</h1>
+        <span id="burger" class="material-symbols-outlined" onclick="clikMenu()">density_small</span>
+        <menu id="itens">
+
+            <ul>
+                <li><a href="index.html">HEDY LAMARR</a></li>
+                <li><a href="topologiaderede.html">TOPOLOGIADEREDE</a></li>
+                <li><a href="WI-FI.html">WI-FI</a></li>
+                <li><a href="COMUTADOR.html">COMUTADOR</a></li>
+                <li><a href="blackbox.html">BLACKBOX</a></li>
+                <li><a href="PYTHON.html">PYTHON</a></li>
+                <li><a href="C SHARP.html">C SHARP</a></li>
+                <li><a href="JAVA SCRIPTS.html">JAVA SCRIPTS</a></li>
+                <li><a href="PRE PROJETO.html">PRE PROJETO</a></li>
+                <li><a href="DESAFIO.html">DESAFIO</a></li>
+                <li><a href="CRIPTO.HTML">CRIPTO</a></li>
+            </ul>
+        </menu>
+    </header>
+
+    <main>
+
+        <div class="imagem">
+            <img src="PROGRAMACAO1.jpeg"  width="460" height="345">
+</div> 
+
+        <article>
+            
+            <h2>DESAFIO</h2>
+           
+            
+            <p>A linguagem de programação é uma ferramenta essencial no mundo da tecnologia,
+                 sendo a base sobre a qual são construídos os mais diversos tipos de softwares e sistemas. 
+                 Ela permite que os programadores comuniquem suas instruções e lógica de forma precisa para o computador,
+                  possibilitando a criação de programas que executam tarefas complexas de maneira eficiente e rápida. Existem inúmeras linguagens de programação, 
+                cada uma com suas características, sintaxe e finalidades específicas, o que torna a escolha da linguagem adequada um ponto crucial no desenvolvimento de um projeto.
+
+                Uma das linguagens mais populares e amplamente utilizadas é o Python, conhecido por sua sintaxe simples e legibilidade, 
+                o que o torna ideal tanto para iniciantes quanto para desenvolvedores experientes. Por outro lado, 
+                linguagens como C++ e Java são amplamente empregadas em áreas que demandam alta performance e controle direto sobre o hardware, 
+                como jogos e sistemas embarcados. Além disso, linguagens como JavaScript dominam o desenvolvimento web, permitindo a criação de sites dinâmicos e interativos.
+  
+            </p>
+
+        </article>
+
+    </main>
+    <script>
+       
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
+
+        function clikMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="br-pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="estilo-mq.css">
+    <link rel="stylesheet" href="estilo-novo.css">
+
+    <title>Menu_Repositorio</title>
+</head>
+
+<body onresize="mudouTamanho()">
+
+    <header>
+        <h1>Meu Site-Responsivo</h1>
+        <span id="burger" class="material-symbols-outlined" onclick="clikMenu()">density_small</span>
+        <menu id="itens">
+
+            <ul>
+                <li><a href="index.html">HEDY LAMARR</a></li>
+                <li><a href="TOPOLOGIADEREDE.html">TOPOLOGIA</a></li>
+                <li><a href="WI-FI.html">WI-FI</a></li>
+                <li><a href="COMUTADOR.html">COMUTADOR</a></li>
+                <li><a href="BLACKBOX.html">BLACKBOX</a></li>
+                <li><a href="PYTHON.html">PYTHON</a></li>
+                <li><a href="C SHARP.html">C SHARP</a></li>
+                <li><a href="JAVA SCRIPTS.html">JAVA SCRIPTS</a></li>
+                <li><a href="PRE PROJETO.html">PRE PROJETO</a></li>
+                <li><a href="DESAFIO.html">PRE PROJETO</a></li>
+                <li><a href="CRIPTO.HTML">CRIPTO</a></li>
+            </ul>
+        </menu>
+    </header>
+
+    <main>
+        <div class="imagem">
+            <img src="PACKET.PNG" width="460" height="345">
+        </div>
+        <article>
+            <h2>PRE PROJETO</h2>
+
+            <p>
+                Pré projeto é um projeto de rede de computadores onde tinhamos cinquenta computadores para
+                distribuir em quatro andares do prédio da escola, analizar quantos swites iamos presisar comprar,
+                roteador, servidor e modem.
+                Precisamos configurar o servidor, o swite, o modem, o roteador e os computadores um por um.
+            </p>
+
+
+        </article>
+
+    </main>
+    <script>
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
+
+        function clikMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="br-pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="estilo-mq.css">
+    <link rel="stylesheet" href="estilo-novo.css">
+
+    <title>Menu_Repositorio</title>
+</head>
+
+<body onresize="mudouTamanho()">
+
+    <header>
+        <h1>Meu Site-Responsivo</h1>
+        <span id="burger" class="material-symbols-outlined" onclick="clikMenu()">density_small</span>
+        <menu id="itens">
+
+            <ul>
+                <li><a href="index.html">HEDY LAMARR</a></li>
+                <li><a href="TOPOLOGIADEREDE.html">TOPOLOGIADEREDE</a></li>
+                <li><a href="WI-FI.html">WI-FI</a></li>
+                <li><a href="COMUTADOR.html">COMUTADOR</a></li>
+                <li><a href="BLACKBOX.html">BLACKBOX</a></li>
+                <li><a href="PYTHON.html">PYTHON</a></li>
+                <li><a href="C SHARP.html">C SHARP</a></li>
+                <li><a href="JAVA SCRIPTS.html">JAVA SCRIPTS</a></li>
+                <li><a href="PRE PROJETO.html">PRE PROJETO</a></li>
+                <li><a href="DESAFIO.html">DESAFIO</a></li>
+                <li><a href="CRIPTO.HTML">CRIPTO</a></li>
+
+            </ul>
+        </menu>
+    </header>
+
+    <main>
+
+        <div class="imagem">
+            <img src="TOPOLOGIA.PNG" width="460" height="345">
+        </div>
+
+        <article>
+
+            <h2>TOPOLOGIA DE REDE</h2>
+
+            <p>
+                A topologia é um ramo da matemática que estuda as propriedades dos espaços que permanecem inalteradas
+                sob certas
+                transformações contínuas, como dobra, estiramento e torção, mas sem rasgamento ou colagem. Essas
+                propriedades são fundamentais
+                para compreender a estrutura e a forma dos objetos geométricos. Uma das principais ideias da topologia é
+                a noção de "continuidade",
+                que descreve como pequenas mudanças em um objeto não alteram sua estrutura fundamental. Um dos conceitos
+                básicos da topologia é o de
+                "espaço topológico", que consiste em um conjunto junto com uma coleção de subconjuntos chamados de
+                "abertos", que satisfazem certas propriedades.
+                Esses abertos representam as regiões que podem ser "moldadas" de forma contínua sem romper o espaço. Por
+                exemplo,
+                um círculo é topologicamente equivalente a uma elipse, pois ambos são objetos de uma dimensão que podem
+                ser
+                deformados um no outro sem rasgar ou colar.
+            </p>
+
+
+        </article>
+
+    </main>
+    <script>
+
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
+
+        function clikMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+
+</html>
